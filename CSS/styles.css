@@ -1,0 +1,1102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2c2560;
+    padding: 10px 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-redes {
+   margin: 34px;
+    display: flex;
+    height: -70px;
+ 
+}
+
+.redes-sociales {
+    position: absolute;
+    right: 140px;
+   
+} 
+
+.redes-sociales a i {
+    background-color: #edeaea;
+    border-radius: 35px;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+}
+
+.redes-sociales a i{
+    font-size: 23px;
+}
+
+
+
+.header-container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar ul li {
+    display: inline;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    background-color: #c5c5c5;
+    line-height: 50%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent; 
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: none;
+    color: white;
+    width: 250px;
+    background-color: transparent; 
+}
+
+.search-bar ::placeholder {
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.search-bar i {
+    margin-left: -23px;
+    color: white;
+}
+
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0; 
+    overflow: hidden;
+    
+}
+
+.progress-bar {
+    width: 50%;
+    height: 8px; 
+    background-color: #90a4ae; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;  
+    color: black;
+    padding-right: 5px; 
+}
+
+.progress-label {
+    font-size: 12px;
+}
+
+.label-progress-container {
+    float: right;
+
+}
+
+.seccion-admision {
+    padding: 23px;
+    font-family: 'Open Sans', sans-serif; 
+    color: #333; 
+}
+
+.seccion-admision h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+
+.seccion-admision a{
+    color: #2a2a2a;
+}
+
+.form-camp-carrera{
+    font-family: 'Open Sans', sans-serif; 
+    margin: 23px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-camp-carrera h2{
+    background: #0f64a2;
+    height: 40px;
+    color: #2a2a2a;
+}
+
+
+
+.form-row {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-row span{
+    color: red;
+}
+  
+.campo, .periodo {
+    flex: 5;
+    margin-right: 10px; 
+
+}
+
+
+  
+.periodo {
+    height: 10px;
+
+    margin-right: 0;
+    margin-bottom: 40px;
+ 
+}
+
+.inf-gen-solicitante {
+    margin-bottom: 10px;
+}
+
+.inf-gen-solicitante h2{
+    background: #0f64a2;
+    height: 40px;
+    padding: 5px;
+    margin: 23px;
+    color: #2a2a2a;
+}
+
+
+.inf-gen-solicitante-nomb-apell {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-nomb-apell span{
+    color: red;
+}
+  
+.nombres, .apellidos {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.nombres input{
+    height: 33px;
+    width: 521px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: background-color 0.s;
+}
+
+.apellidos input{
+    height: 33px;
+    width: 500px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    transition: background-color 0.s;
+}
+
+.nombres input:hover, .apellidos input:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+
+}
+  
+.apellidos {
+    margin-right: 0; 
+}
+
+
+
+
+
+.inf-gen-solicitante-fech-nac {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-fech-nac span{
+    color: red;
+}
+  
+.fecha, .sexo, .cedula {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.fecha input{
+    height: 33px;
+    width: 235px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.sexo select, .select-sex select{
+    height: 33px;
+    width: 270px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.cedula input{
+    height: 33px;
+    width: 500px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.cedula p{
+    color: #808080
+}
+
+.fecha input:hover, .sexo select:hover, .cedula input:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+
+}
+  
+.cedula {
+    margin-right: 0; 
+}
+
+
+
+
+
+.inf-gen-solicitante-estadoc-nac-leng {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-estadoc-nac-leng span{
+    color: red;
+}
+  
+.estado-civil, .nacionalidad, .lengua-materna {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.lengua-materna {
+    margin-right: 10px; 
+}
+
+
+.estado-civil select, .nacionalidad input, .lengua-materna select {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.estado-civil select{
+    height: 33px;
+    width: 350px;
+}
+
+.nacionalidad input{
+    height: 33px;
+    width: 270px;
+}
+
+
+.estado-civil select:hover, .nacionalidad input:hover, .lengua-materna select:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+
+
+}
+
+hr {
+    border: none; 
+    padding: 5px;
+    border-top: 2px solid #0f64a2; 
+    margin: 0px 0;   
+    align-items: center;
+    width: 1040px;
+    line-height: 0px;
+}
+
+
+
+
+
+
+
+.inf-gen-solicitante-pais-orig-rec {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 10px;
+}
+
+.inf-gen-solicitante-pais-orig-rec span{
+    color: red;
+}
+  
+.pais-origen, .pais-rec-act{
+    flex: 100;
+    margin-right: 10px; 
+    line-height: 30px;
+    max-width: 500px;
+}
+
+.pais-origen {
+    margin-right: 10px; 
+
+}
+
+
+.pais-origen select, .pais-rec-act select {
+   
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+    width: 518px;
+    height: 35px;
+}
+
+
+.pais-rec-act select{
+    height: 33px;
+    width: 518px;
+}
+
+
+.pais-origen select:hover, .pais-rec-act select:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+
+
+.inf-gen-solicitante-estado-prov-nac {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estado-prov-nac span, .estado-prov-rec-hab span{
+    color: red;
+}
+  
+.estado-prov-nac, .estado-prov-rec-hab{
+    flex: 100;
+    margin-right: 10px; 
+    line-height: 30px;
+}
+
+.estado-prov-rec-hab {
+    margin-right: 15px; 
+}
+
+
+.estado-prov-nac input, .estado-prov-rec-hab input {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+    
+}
+
+.estado-prov-nac input {
+    height: 33px;
+    width: 515px;
+}
+
+.estado-prov-rec-hab input{
+    height: 33px;
+    width: 515px;
+}
+
+
+.estado-prov-nac input:hover, .estado-prov-rec-hab input:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+    
+}
+
+
+
+
+
+
+
+
+
+h5 {
+   line-height: 0px;
+   margin-left: 20px;
+}
+.inf-gen-solic {
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solic span{
+    color: red;
+}
+  
+.calle, .casa, .sector {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.sector {
+    margin-right: 10px; 
+}
+
+
+.calle input, .casa input, .sector input {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.calle input{
+    height: 33px;
+    width: 340px;
+}
+
+.casa input{
+    height: 33px;
+    width: 255px;
+}
+
+.sector input{
+    height: 33px;
+    width: 410px;
+}
+
+
+.calle input:hover, .casa input:hover, .sector input:hover{
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+
+
+
+.inf-gen-solicitante-ciudad-prov {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-ciudad-prov span{
+    color: red;
+}
+  
+.ciudad, .provincia {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.provincia {
+    margin-right: 10px; 
+}
+
+
+.ciudad input, .provincia input {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.ciudad input{
+    height: 33px;
+    width: 570px;
+}
+
+.provincia input{
+    height: 33px;
+    width: 455px;
+}
+
+
+.ciudad input:hover, .provincia input:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+
+.inf-gen-solicitante-pais-cod {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-pais-cod span{
+    color: red;
+}
+  
+.pais, .codigo-Postal {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.pais {
+    margin-right: 10px; 
+}
+
+
+.pais select, .codigo-Postal input {
+    height: 33px;
+    width: 573px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.selec-Pais {
+    height: 38px;
+    width: 575px;
+}
+
+.codigo-Postal input{
+    height: 33px;
+    width: 455px;
+}
+
+
+.pais select:hover, .codigo-Postal input:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+
+
+
+.inf-gen-solicitante-m {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.inf-gen-solicitante-m span{
+    color: red;
+}
+
+  
+.opc-input {
+    flex: 100;
+    margin-right: 5px; 
+}
+
+
+.opc-input select {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.opc-input label {
+    height: 38px;
+    width: 250px;
+
+}
+
+
+
+
+.opc-input select:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+.inf-gen-solicitante-telef-cel-email {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inf-gen-solicitante-telef-cel-email span{
+    color: red;
+}
+  
+.telefono, .celular, .email {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.email {
+    margin-right: 10px; 
+}
+
+
+.telefono input, .celular input, .email input {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.telefono input {
+    height: 38px;
+    width: 250px;
+}
+
+.celular input{
+    height: 33px;
+    width: 300px;
+}
+
+.email input{
+    height: 33px;
+    width: 450px;
+}
+
+
+.telefono input:hover, .celular input:hover, .email input:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+
+
+
+.informacion-salud h2{
+    padding: 50px;
+    margin: 23px;
+    background: #0f64a2;
+    height: 30px;
+    margin-top: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #2a2a2a;
+    
+}
+
+
+
+.info-salud {
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-salud span{
+    color: red;
+}
+  
+.tipo-sangre, .alergias, .seguro-salud {
+    flex: 100;
+    margin-right: 10px; 
+}
+
+.sector {
+    margin-right: 10px; 
+}
+
+
+.tipo-sangre select, .alergias input {
+    height: 33px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 2px;
+    transition: background-color 0.s;
+}
+
+.seguro-salud input {
+    line-height: 20px;
+    margin-top: 15px;
+
+}
+
+
+.alergias input{
+    height: 33px;
+    width: 595px;
+}
+
+
+
+
+
+
+
+
+
+
+.informacion-salud-cont {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:20px;
+}
+
+.opc-input-algun-acom input {
+    padding: auto;
+    line-height: 30px;
+}
+
+
+.informacion-salud-fin {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height:20px;
+}
+
+.label-req-accecibilidad p{
+    color: #808080;
+}
+
+.informacion-salud-fin span {
+    color: red;
+}
+
+.informacion-academica{
+    line-height: -10px;
+}
+
+
+.informacion-academica h2{
+   
+    margin: 23px;
+    background: #0f64a2;
+    height: 30px;
+    margin-top: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #2a2a2a;  
+}
+
+
+
+
+
+
+.informacion-academica-cont {
+    margin: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacion-academica-cont span{
+    color: red;
+}
+  
+.selec-tip-inst-grad label {
+    margin-right: 15px; 
+}
+
+
+
+.ano-graduacion input{
+    height: 33px;
+    width: 300px;
+}
+
+.ano-graduacion input:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+.ano-graduacion input {
+height: 33px;
+width: 250px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 2px;
+transition: background-color 0.s;
+}
+
+
+
+
+
+
+.informacion-academica-nomb-inst {
+    margin: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-academica-nomb-inst span {
+    color: red;
+}
+
+
+.direc-inst span {
+    color: red;
+}
+  
+
+.inp-nomb-inst input{
+    height: 33px;
+    width: 500px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 2px;
+transition: background-color 0.s;
+}
+
+.direc-inst input:hover, .inp-nomb-inst input:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+.inp-dir-inst input {
+    height: 33px;
+width: 523px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 2px;
+transition: background-color 0.s;
+}
+
+
+
+
+
+
+
+.informacion-academica-pais-telef {
+    margin: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacion-academica-pais-telef span {
+    color: red;
+}
+  
+
+.selec-pais select{
+    height: 33px;
+    width: 500px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 2px;
+transition: background-color 0.s;
+}
+
+.inp-telefono input:hover, .selec-pais select:hover {
+    background-color:  #f0f4f8;
+    outline: none;
+}
+
+.inp-telefono input {
+    height: 33px;
+width: 523px;
+border-radius: 4px;
+border: 1px solid #ccc;
+margin-top: 2px;
+transition: background-color 0.s;
+}
+
+
+
+.informacion-academicacursado-estud-prim-secun-idiom {
+    margin: 23px;
+}
+
+
+.estud-prim-secun-idiom-cont label {
+    font-size: 10px;
+}
+
+.button-fin button {
+    margin: 23px;
+    background-color: #003DA5; /* Color azul */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado interno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            font-size: 16px; /* Tamaño de fuente */
+            cursor: pointer; /* Cursor al pasar el mouse */
+            text-align: center; /* Centrar texto */
+            display: inline-block; /* Para que el botón se comporte como un bloque */
+            text-decoration: none; /* Sin subrayado */
+            transition: all .3s ease-out;/* Transición suave para el color de fondo */
+            justify-content: center;
+            width: 1050px;
+            line-height: 30px;
+}
+
+.button-fin button:hover {
+    background-color: #042153; /* Color azul más claro al pasar el mouse */
+}
+
+
+
+
+
+.footer {
+    background-color: #000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-container {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column {
+    width: 25%; /* Ancho de cada columna */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column p, .footer-column a {
+    font-size: 14px;
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px; 
+    color: #c5c5c5;
+
+   
+}
+
+.footer-bottom {
+    background: #090909;
+    text-align: center;
+    padding: 10px 0 15px 0;
+}
+
+.boton-subir {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #003DA5; /* Color azul */
+    color: white; /* Color del texto */
+    padding: 15px;
+    border: none;
+   
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor al pasar el mouse */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.boton-subir:hover {
+    background-color: #0056b3; /* Color azul más claro al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

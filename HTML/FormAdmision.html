@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Admisión</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/Redes 2 - fondo transparente.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    
+    <div class="header-redes">
+        <i class='bx bx-chevron-left' ></i>
+        <a href="https://www.pucmm.edu.do/">Portal PUCMM</a>
+        <div class="redes-sociales">
+            <a href=""><i class='bx bxl-facebook'></i></a></i>
+            <a href=""><i class='bx bxl-instagram' ></i></a>
+
+        </div>
+    </div><br>
+
+    <header>
+
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://tep.pucmm.edu.do/" </a><img src="/assets/logo.PNG" alt="TEP Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">NOSOTROS</a></li>
+                    <li><a href="academico.html">OFERTA</a></li>
+                    <li><a href="admision.html">ACADEMICO</a></li>
+                    <li><a href="nosotros.html">ENLACES</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar este sitio"> <i class='bx bx-search'></i>
+                
+            </div>
+        </div>
+    </header><br><br><br><br><br><br><br><br>
+
+    <div class="progress-container">
+        <div class="progress-bar">
+            <span class="progress-label"></span>
+        </div>
+    </div>
+    <div class="label-progress-container">
+        <p>50%</p>
+    </div>
+
+    <main>
+        <div class="seccion-admision">
+            <h1>Solicitud de Admisión a carreras Técnico Superior</h1>
+            <p class="admision-descripcion">
+                “Este formulario solo puede ser completado una vez por estudiante. Antes de enviar, por favor verifica que todos los datos suministrados estén correctos. En caso de no tener todos los documentos a mano al momento de completar el formulario, puedes darle a enviar y los que queden pendientes mandarlos por correo a
+                <a href="mailto:tep@pucmm.edu.do">tep@pucmm.edu.do</a> junto con tu nombre, carrera de interés y campus”.
+            </p>
+        </div>
+
+        <section>
+            <form action="#" method="POST">
+                <div class="form-camp-carrera">
+                    <h2>Campus y Carrera al que solicita admisión</h2>
+                </div>
+
+                <div class="form-row">
+                    <div class="campo">
+                        <label for="campus">Campus: <span>*</span></label><br><br>
+                        <div class="opciones">
+                            <input type="radio" name="campus" value="Santiago"> Campus de Santiago
+                            <input type="radio" name="campus" value="SantoDomingo"> Campus de Santo Domingo
+                        </div>
+                    </div>
+
+                    <div class="periodo">
+                        <label for="periodo">Período de ingreso que desea solicitar: <span>*</span></label><br><br>
+                        <input type="radio" name="periodo" value="Enero 2025"> Enero 2025
+                    </div>
+                </div>
+
+                <div class="inf-gen-solicitante">
+                    <h2>I. Información General del Solicitante</h2>
+                </div>
+
+                <div class="inf-gen-solicitante-nomb-apell">
+                    <div class="nombres">
+                        <label for="nombres">Nombres: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="text" id="nombres" name="nombres" required>
+                        </div>
+                    </div>
+
+                    <div class="apellidos">
+                        <label for="apellidos">Apellidos: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="apellidos" name="apellidos" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inf-gen-solicitante-fech-nac">
+                    <div class="fecha">
+                        <label for="fecha">Fecha de Nacimiento: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="date" id="nombres" name="nombres" required>
+                        </div>
+                    </div>
+
+                    <div class="sexo">
+                        <label for="sexo">Sexo: <span>*</span></label>
+                        <div class="select-sex">
+                            <select id="sexo" name="sexo" required>
+                                <option value="">Seleccione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cedula">
+                        <label for="cedula"><strong>Cédula de Identidad y Electoral / Pasaporte:</strong> <span>*</span></label><br>
+                        <p>
+                            Favor llenar solo con números, sin guion ni espacio.
+                        </p>
+                        <div class="cedula">
+                            <input type="text" id="cedula" name="cedula" required>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="inf-gen-solicitante-estadoc-nac-leng">
+                    <div class="estado-civil">
+                        <label for="estado-civil">Estado Civil: <span>*</span></label><br>
+                        <div class="selec-estado">
+                            <select id="estado-civil" name="estado-civil" required>
+                                <option value="">Seleccione</option>
+                                <option value="soltero">Soltero/a</option>
+                                <option value="casado">Casado/a</option>
+                                <option value="no-especificar">No especificar</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="nacionalidad">
+                        <label for="nacionalidad">Nacionalidad: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="nacionalidad" name="nacionalidad" required>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="lengua-materna">
+                        <label for="Lengua-Materna"><strong>Lengua Materna:  </strong> <span>*</span></label><br>
+                        <div class="lengua-materna">
+                            <select id="selec-lengua-materna" name="selec-lengua-materna" required>
+                                <option value="">Seleccione</option>
+                                <option value="espanol">Español</option>
+                                <option value="ingles">Inglés</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    <center><hr></center>
+
+
+                    <div class="inf-gen-solicitante-pais-orig-rec">
+                        <div class="pais-origen">
+                            <label for="pais-origen">País de Origen (Nacimiento): <span>*</span></label><br>
+                            <div class="selec-pais-origen">
+                                <select id="pais-origen" name="pais-origen" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="republica-dominicana">República Dominicana</option>
+                                    <option value="Afganistan">Afganistán</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Alemania">Alemania</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Bélgica">Bélgica</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Canadá">Canadá</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Dinamarca">Dinamarca</option>
+                                    <option value="Egipto">Egipto</option>
+                                    <option value="España">España</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="Francia">Francia</option>
+                                    <option value="Grecia">Grecia</option>
+                                    <option value="India">India</option>
+                                    <option value="Italia">Italia</option>
+                                    <option value="Japón">Japón</option>
+                                    <option value="México">México</option>
+                                    <option value="Países Bajos">Países Bajos</option>
+                                    <option value="Reino Unido">Reino Unido</option>
+                                    <option value="Rusia">Rusia</option>
+                                    <option value="Suecia">Suecia</option>
+                                    <option value="Suiza">Suiza</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pais-rec-act">
+                            <label for="pais-rec-act">País de Residencia Actual: <span>*</span></label><br>
+                            <div class="pais-rec-act">
+                                <select id="selec-rec-act" name="pais-rec-act" required>
+                                    <option value="">Seleccione</option>
+                                    <option value="republica-dominicana">República Dominicana</option>
+                                    <option value="Afganistan">Afganistán</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Alemania">Alemania</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Bélgica">Bélgica</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Canadá">Canadá</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Dinamarca">Dinamarca</option>
+                                    <option value="Egipto">Egipto</option>
+                                    <option value="España">España</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="Francia">Francia</option>
+                                    <option value="Grecia">Grecia</option>
+                                    <option value="India">India</option>
+                                    <option value="Italia">Italia</option>
+                                    <option value="Japón">Japón</option>
+                                    <option value="México">México</option>
+                                    <option value="Países Bajos">Países Bajos</option>
+                                    <option value="Reino Unido">Reino Unido</option>
+                                    <option value="Rusia">Rusia</option>
+                                    <option value="Suecia">Suecia</option>
+                                    <option value="Suiza">Suiza</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                <div class="inf-gen-solicitante-estado-prov-nac">
+                    <div class="estado-prov-nac">
+                        <label for="estado-civil">Estado/Provincia de Nacimiento: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="text" id="provincia-nacimiento" name="provincia-nacimiento" required>
+                        </div>
+                    </div>
+
+                    <div class="estado-prov-rec-hab">
+                        <label for="estado-prov-rec-hab">Estado/Provincia de Residencia Habitual: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="estado-prov-rec-hab" name="estado-prov-rec-hab">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <center><hr></center>
+
+                <h5>Dirección actual:</h5>
+                <div class="inf-gen-solic">
+                    <div class="calle">
+                        <label for="calle">Calle: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="text" id="calle" name="calle" required>
+                        </div>
+                    </div>
+
+                    <div class="casa">
+                        <label for="casa"># de Casa o Apartamento: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="casa" name="casa">
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="sector">
+                        <label for="sector">Sector: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="sector" name="sector">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="inf-gen-solicitante-ciudad-prov">
+                    <div class="ciudad">
+                        <label for="calle">Ciudad: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+                    </div>
+
+                    <div class="provincia">
+                        <label for="provincia">Provincia: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="provincia" name="provincia" required>
+                            </select>
+                        </div>
+                    </div>              
+                </div>
+
+
+
+                <div class="inf-gen-solicitante-pais-cod">
+                    <div class="pais">
+                        <label for="pais">Pais: <span>*</span></label><br>
+                        <div class="selec-Pais">
+                            <select id="selec-Pais" name="selec-Pais" required>
+                                <option value="" disabled selected>Seleccione por favor</option>
+                                <option value="Republica Dominicana">República Dominicana</option>
+                                <option value="Afganistan">Afganistán</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Alemania">Alemania</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Dinamarca">Dinamarca</option>
+                                <option value="Egipto">Egipto</option>
+                                <option value="España">España</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Francia">Francia</option>
+                                <option value="Grecia">Grecia</option>
+                                <option value="India">India</option>
+                                <option value="Italia">Italia</option>
+                                <option value="Japón">Japón</option>
+                                <option value="México">México</option>
+                                <option value="Países Bajos">Países Bajos</option>
+                                <option value="Reino Unido">Reino Unido</option>
+                                <option value="Rusia">Rusia</option>
+                                <option value="Suecia">Suecia</option>
+                                <option value="Suiza">Suiza</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="codigo-Postal">
+                        <label for="codigo-Postal">Código Postal: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="codigo-Postal" name="codigo-Postal" required>
+                            </select>
+                        </div>
+                    </div>              
+                </div>
+
+
+                <div class="inf-gen-solicitante-telef-cel-email">
+                    <div class="telefono">
+                        <label for="telefono">Telefono: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <input type="tel" id="telefono" name="telefono" pattern="\d{3} \d{4} \d{4}" placeholder="### #### ####" required>
+                        </div>
+                    </div>
+
+                    <div class="celular">
+                        <label for="celular">Celular: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="tel" id="celular" name="telefono" pattern="\d{3} \d{4} \d{4}" placeholder="### #### ####" required>
+                        </div>
+                    </div>   
+
+                    <div class="email">
+                        <label for="email">Email: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>                       
+                </div>
+
+
+                <div class="inf-gen-solicitante-m">
+                    <label for="medio">¿Por cuál medio te enteraste de la oferta del TEP? <span>*</span> </label>                           
+                </div>
+
+
+                
+                <div class="inf-gen-solicitante-m">
+                        <div class="opc-input">
+                            <select id="medio" name="medio" required>
+                                <option value="" disabled selected>Seleccione por favor</option>
+                                <option value="redes_sociales">Publicidad en redes sociales y medios digitales</option>
+                                <option value="vallas">Publicidad en vallas en las calles</option>
+                                <option value="feria">Asistencia a una feria</option>
+                                <option value="centro_educativo">Visitamos tu centro educativo</option>
+                                <option value="television">Por la televisión</option>
+                                <option value="correo">Por correo electrónico</option>
+                                <option value="radio">Por la radio</option>
+                                <option value="conocido">Por un conocido</option>
+                                <option value="otro">Otro</option>
+                            </select>  
+                        </div>                                                   
+                </div>
+
+
+                <div class="informacion-salud">
+                    <h2>II. Información de Salud</h2>                       
+                </div>
+
+                <div class="info-salud">
+                    <div class="tipo-sangre">
+                        <label for="tipo-sangre">Tipo de sangre: <span>*</span></label><br>
+                        <div class="opc-input">
+                            <select id="tipo-sangre" name="tipo-sangre" required>
+                                <option value="" disabled selected>Seleccione por favor</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="alergias">
+                        <label for="alergias">Alergias: <span>*</span></label>
+                        <div class="opc-input">
+                            <input type="text" id="alergias" name="alergias">
+                        </div>
+                    </div>   
+    
+                    <div class="seguro-salud">
+                        <label for="seguro-salud">¿Tiene Usted Seguro</label><br>
+                        <label for="seguro-salud">de Salud?</label>
+                        <div class="opc-input">
+                            <input type="radio" id="seguro-salud-si" name="seguro-salud" value="si" required>
+                            <label for="seguro-salud-si">Sí </label>
+                            <input type="radio" id="seguro-salud-no" name="seguro-salud" value="no" required>
+                            <label for="seguro-salud-no">No</label>
+                        </div>
+                    </div>                        
+                </div>
+
+
+
+
+                <div class="informacion-salud-cont">
+                    <div class="label-algun-acom">
+                        <label for="label-algun-acom">¿Usted necesita algún acomodo razonable para tomar el examen</label><br>
+                        <label for="label-algun-acom">de admisión?</label><br><br>
+                        <div class="opc-input-algun-acom">
+                            <input type="radio" id="acomodo-si" name="acomodo" value="si" required>
+                            <label for="acomodo-si">Sí</label>
+                            <input type="radio" id="acomodo-no" name="acomodo" value="no" required>
+                            <label for="acomodo-no">No</label>
+                        </div>
+                    </div>                       
+                </div>
+
+
+                <div class="informacion-salud-fin">
+                    <div class="label-req-accecibilidad">
+                        <label for="label-req-accecibilidad">¿Tiene Usted algún requerimiento de accesibilidad? <span>*</span></label><br>
+                        <p>La PUCMM, como institución católica y de servicio a la sociedad, está abierta a todas las personas, por lo que en su proceso de admisión asegura la inclusión educativa de las personas con discapacidad.</p>
+                        <div class="opc-input-req-accecibilidad">
+                            <input type="radio" id="accesibilidad-si" name="accesibilidad" value="si" required>
+                            <label for="accesibilidad-si">Sí</label>
+                            <input type="radio" id="accesibilidad-no" name="accesibilidad" value="no" required>
+                            <label for="accesibilidad-no">No</label>
+                        </div>
+                    </div>                       
+                </div>
+
+
+
+                    <div class="informacion-academica">
+                        <h2>III. Información Académica</h2>
+                    </div>
+
+                    
+                    
+                <div class="informacion-academica-cont">
+                    <div class="completo-est-sec">
+                        <label for="completo-est-sec">¿Completó sus estudios secundarios?</label><br><br>
+                        <div class="selec-completo-est-sec">
+                            <input type="radio" id="estudios-secundarios-si" name="estudios-secundarios-si" value="si" required>
+                            <label for="estudios-secundarios-si">Sí</label>
+                            <input type="radio" id="estudios-secundarios-no" name="estudios-secundarios-no" value="no" required>
+                            <label for="estudios-secundarios-no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="tip-inst-grad">
+                        <label for="tip-inst-grad">¿En qué tipo de institución se graduó/graduará? <span>*</span></label><br><br>
+                        <div class="selec-tip-inst-grad">
+                            <input type="radio" id="tipo-institución-publica" name="tipo-institución" value="publica" required>
+                            <label for="tipo-institución-publica">Pública</label>
+                            <input type="radio" id="tipo-institución-privada" name="tipo-institución" value="privada" required>
+                            <label for="tipo-institución-privada">Privada</label>
+                            <input type="radio" id="tipo-institución-no-especifica" name="tipo-institución" value="no-especifica" required>
+                            <label for="tipo-institución-no-especifica">No especifica</label>
+                        </div>
+                    </div>   
+    
+                    <div class="ano-graduacion">
+                        <label for="ano-graduacion">Año de graduación: <span>*</span></label><br><br>
+                        <div class="intr-ano-grad">
+                            <input type="text" id="ano-graduacion" name="ano-graduacion" required min="1900" max="2100">
+                        </div>
+                    </div>                       
+                </div>
+
+
+
+                <div class="informacion-academica-nomb-inst">
+                    <div class="info-academica-nomb-inst">
+                        <label for="nomb-inst">Nombre de la Institución: <span>*</span></label><br><br>
+                        <div class="inp-nomb-inst">
+                            <input type="text" id="inp-nomb-inst" name="inp-nomb-inst" required min="1900" max="2100">
+                        </div>
+                    </div> 
+
+                    <div class="direc-inst">
+                        <label for="dir-inst">Direccion de la Institución: <span>*</span></label><br><br>
+                        <div class="inp-dir-inst">
+                            <input type="text" id="inp-dir-inst" name="inp-dir-inst">
+                        </div>
+                    </div>                     
+                </div>
+
+
+                <div class="informacion-academica-nomb-inst">
+                    <div class="info-academica-nomb-inst">
+                        <label for="nomb-inst">Ciudad: <span>*</span></label><br><br>
+                        <div class="inp-nomb-inst">
+                            <input type="text" id="inp-nomb-inst" name="inp-nomb-inst" required min="1900" max="2100">
+                        </div>
+                    </div> 
+
+                    <div class="direc-inst">
+                        <label for="dir-inst">Provincia: <span>*</span></label><br><br>
+                        <div class="inp-dir-inst">
+                            <input type="text" id="inp-dir-inst" name="inp-dir-inst">
+                        </div>
+                    </div>                     
+                </div>
+
+                <div class="informacion-academica-pais-telef">
+                    <div class="info-academica-pais">
+                        <label for="pais">País: <span>*</span></label><br><br>
+                        <div class="selec-pais">
+                            <select id="selec-Pais" name="selec-Pais" required>
+                                <option value="" disabled selected>Seleccione por favor</option>
+                                <option value="Republica Dominicana">República Dominicana</option>
+                                <option value="Afganistan">Afganistán</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Alemania">Alemania</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Dinamarca">Dinamarca</option>
+                                <option value="Egipto">Egipto</option>
+                                <option value="España">España</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Francia">Francia</option>
+                                <option value="Grecia">Grecia</option>
+                                <option value="India">India</option>
+                                <option value="Italia">Italia</option>
+                                <option value="Japón">Japón</option>
+                                <option value="México">México</option>
+                                <option value="Países Bajos">Países Bajos</option>
+                                <option value="Reino Unido">Reino Unido</option>
+                                <option value="Rusia">Rusia</option>
+                                <option value="Suecia">Suecia</option>
+                                <option value="Suiza">Suiza</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                        </div>
+                    </div> 
+
+                    <div class="info-academica-telefono">
+                        <label for="telefono">Teléfono: </label><br><br>
+                        <div class="inp-telefono">
+                            <input type="tel" id="telefono" name="telefono" pattern="\d{3} \d{4} \d{4}" placeholder="### #### ####" required>
+                        </div>
+                    </div>                     
+                </div>
+
+
+
+                <div class="informacion-academicacursado-estud-prim-secun-idiom">
+                    <label for="estud-prim-secun-idiom">¿Ha cursado sus estudios primarios y/o secundarios en otro idioma</label><br>
+                    <label for="estud-prim-secun-idiom">diferente al español? <span>*</span></label><br><br>                        
+                        <div class="inp-idioma">
+                            <input type="radio" id="estud-prim-secun-idiom-si" name="estud-prim-secun-idiom-si" value="si" required>
+                            <label for="estud-prim-secun-idiom-si">Sí</label>
+                            <input type="radio" id="estud-prim-secun-idiom-no" name="estud-prim-secun-idiom-no" value="no" required>
+                            <label for="estudios-secundarios-no">No</label>
+                        </div><br><br>
+
+                        <label for="estud-prim-secun-idiom">B. ESTUDIOS UNIVERSITARIOS</label><br><br>
+                    <label for="estud-prim-secun-idiom-cont">¿Ha realizado estudios universitarios previos? <span>*</span></label><br><br>                        
+                        <div class="inp-idioma">
+                            <input type="radio" id="estud-prim-secun-idiom-si" name="estud-prim-secun-idiom-si" value="si" required>
+                            <label for="estud-prim-secun-idiom-si">Sí</label>
+                            <input type="radio" id="estud-prim-secun-idiom-no" name="estud-prim-secun-idiom-no" value="no" required>
+                            <label for="estudios-secundarios-no">No</label>
+                        </div>  
+                </div>
+
+
+
+                <center><hr></center>
+
+                <div class="button-fin">
+                    <button type="submit">Próxima página</button>
+                </div><br><br><br><br>
+                
+
+
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>SANTO DOMINGO</h4>
+                <p>Abraham Lincoln esq. Simón Bolívar Santo Domingo, República Dominicana.</p>
+                <p>Tel.: (809) 535-0111, Ext. 3149, 2473, 2311 y 2150</p>
+            </div>
+            <div class="footer-column">
+                <h4>SANTIAGO</h4>
+                <p>Autopista Duarte Km 1 1/2 Santiago, República Dominicana.</p>
+                <p>Tel.: (809) 580-1962, Ext. 4545, 4572 y 4575</p>
+            </div>
+            <div class="footer-column">
+                <h4>ENLACES</h4>
+                <ul>
+                    <li><a href="#">Mi Campus</a></li>
+                    <li><a href="#">Calendario Académico</a></li>
+                    <li><p><a href="mailto:tep@pucmm.edu.do">tep@pucmm.edu.do</a></p></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2024 © PUCMM | Centro de Tecnología y Educación Permanente</p>
+        </div>
+    </footer>
+
+    <a href="#" class="boton-subir" title="Subir">↑</a>
+
+
+</body>
+
+</html>
